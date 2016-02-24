@@ -31,7 +31,6 @@
     
 }
 
-
 - (UIImage *) buttonImageFromColor:(UIColor *)color {
     CGRect rect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     UIGraphicsBeginImageContext(rect.size);
@@ -47,7 +46,7 @@
     UIButton *btn = [[UIButton alloc] initWithFrame:rect];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    const  SEL selArray[] = {@selector(bootstrapStyle), @selector(defaultManager), @selector(primaryStyle), @selector(successStyle), @selector(infoStyle), @selector(warningStyle), @selector(dangerStyle)};
+    const  SEL selArray[] = {@selector(successStyle)};
     if ([btn respondsToSelector:selArray[style]]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"

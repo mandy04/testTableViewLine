@@ -62,7 +62,7 @@
 }
 
 - (void)messageBtnClicked {
-    return;
+
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
