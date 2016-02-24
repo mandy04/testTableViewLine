@@ -1,0 +1,21 @@
+//
+//  TV-PrefixHeader.pch
+//  testTableViewLine
+//
+//  Created by llbt on 16/2/18.
+//  Copyright © 2016年 llbt. All rights reserved.
+//
+
+#ifndef TV_PrefixHeader_pch
+#define TV_PrefixHeader_pch
+
+
+#import "Masonry.h"
+#define BgColor(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:1];
+
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+
+#define kPaddingLeftWidth 15.0
+
+#endif /* TV_PrefixHeader_pch */
